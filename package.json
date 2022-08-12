@@ -1,0 +1,24 @@
+{
+  "name": "js211_checkpointfechapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenr03/JS211_CheckpointFechApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenr03/JS211_CheckpointFechApp/issues"
+  },
+  "homepage": "https://github.com/chenr03/JS211_CheckpointFechApp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
+
+
