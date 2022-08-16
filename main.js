@@ -6,6 +6,7 @@ window.onload = function () {
     //  *Call functions on page load.
     discGolf();
 };
+//Testing original arrays
 
 // const consoleData = () => {
 //     console.log(arrayofDiscs);
@@ -160,16 +161,15 @@ const getDisc = (arrayOfDiscs) => {
         const html = `
      <div id="card-container">
 
-        <h1>${disc.name}</h1>
-        
-        <h6>${disc.dataId}</h6>
-        <h6>${disc.flightType}</h6>
-        <h6>${disc.flightPath}
-            <picture>
-                <img src="${disc.flightPath}" alt="user image" class="user-image" />
-            </picture>
-        </h6>
-        
+        <h1>${disc.name}</h1>     
+        <h5>${disc.flightType}</h5>
+        <div id="flightPath-container">
+            <h6>
+                <picture>
+                     <img src="${disc.flightPath}" alt="user image" class="user-image" />
+                </picture>
+            </h6>
+        </div>
         
       </div>
     </div>
@@ -183,147 +183,3 @@ const getDisc = (arrayOfDiscs) => {
     });
 };
 
-// const displayVeryOverstable = () => {
-//     getVeryOverstableDiscs(arrayOfDiscs);
-// };
-
-
-// //mapping through arrayOfDiscs to get the internals of the array of Overstable Discs to populate when you click the button
-// const getOverstableDiscs = (arrayOfDiscs) => {
-//     arrayOfDiscs.map(disc => {
-//         const displayOverstable = document.getElementById('page-container');
-//         const html = `
-//      <div id="card-container">
-//
-//         <h1>${disc.name}</h1>
-//
-//         <h6>${disc.dataId}</h6>
-//         <h6>${disc.flightType}</h6>
-//         <h6>${disc.flightPath}
-//             <picture>
-//                 <img src="${disc.picture.thumbnail}" alt="user image" class="user-image" />
-//             </picture>
-//         </h6>
-//
-//
-//       </div>
-//     </div>
-//     </div>
-//     `;
-//         // displayVeryOverstable.insertAdjacentHTML('afterbegin', html);
-//         displayOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayStable.insertAdjacentHTML('afterbegin', html);
-//         // displayUnderstable.insertAdjacentHTML('afterbegin', html);
-//         // displayVeryUnderstable.insertAdjacentHTML('afterbegin', html);
-//     });
-// };
-//
-// const displayOverstable = () => {
-//     getOverstableDiscs(arrayOfDiscs);
-// };
-//
-//
-// //mapping through arrayOfDiscs to get the internals of the array of Stable Discs to populate when you click the button
-// const getStableDiscs = (arrayOfDiscs) => {
-//     arrayOfDiscs.map(disc => {
-//         const displayStable = document.getElementById('page-container');
-//         const html = `
-//      <div id="card-container">
-//
-//         <h1>${disc.name}</h1>
-//
-//         <h6>${disc.dataId}</h6>
-//         <h6>${disc.flightType}</h6>
-//         <h6>${disc.flightPath}
-//             <picture>
-//                 <img src="${disc.picture.thumbnail}" alt="user image" class="user-image" />
-//             </picture>
-//         </h6>
-//
-//
-//       </div>
-//     </div>
-//     </div>
-//     `;
-//         // displayVeryOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayOverstable.insertAdjacentHTML('afterbegin', html);
-//         displayStable.insertAdjacentHTML('afterbegin', html);
-//         // displayUnderstable.insertAdjacentHTML('afterbegin', html);
-//         // displayVeryUnderstable.insertAdjacentHTML('afterbegin', html);
-//     });
-// };
-//
-// const displayStable = () => {
-//     getStableDiscs(arrayOfDiscs);
-// };
-//
-//
-// //mapping through arrayOfDiscs to get the internals of the array of Understable Discs to populate when you click the button
-// const getUnderstableDiscs = (arrayOfDiscs) => {
-//     arrayOfDiscs.map(disc => {
-//         const displayUnderstable = document.getElementById('page-container');
-//         const html = `
-//      <div id="card-container">
-//
-//         <h1>${disc.name}</h1>
-//
-//         <h6>${disc.dataId}</h6>
-//         <h6>${disc.flightType}</h6>
-//         <h6>${disc.flightPath}
-//             <picture>
-//                 <img src="${disc.picture.thumbnail}" alt="user image" class="user-image" />
-//             </picture>
-//         </h6>
-//
-//
-//       </div>
-//     </div>
-//     </div>
-//     `;
-//         // displayVeryOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayStable.insertAdjacentHTML('afterbegin', html);
-//         displayUnderstable.insertAdjacentHTML('afterbegin', html);
-//         // displayVeryUnderstable.insertAdjacentHTML('afterbegin', html);
-//     });
-// };
-//
-// const displayUnderstable = () => {
-//     getUnderstableDiscs(arrayOfDiscs);
-// };
-//
-//
-// //mapping through arrayOfDiscs to get the internals of the array of Very Understable Discs to populate when you click the button
-// const getVeryUnderstableDiscs = (arrayOfDiscs) => {
-//     arrayOfDiscs.map(disc => {
-//         const displayVeryUnderstable = document.getElementById('page-container');
-//         const html = `
-//      <div id="card-container">
-//
-//         <h1>${disc.name}</h1>
-//
-//         <h6>${disc.dataId}</h6>
-//         <h6>${disc.flightType}</h6>
-//         <h6>${disc.flightPath}
-//             <picture>
-//                 <img src="${disc.picture.thumbnail}" alt="user image" class="user-image" />
-//             </picture>
-//         </h6>
-//
-//
-//       </div>
-//     </div>
-//     </div>
-//     `;
-//         // displayVeryOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayOverstable.insertAdjacentHTML('afterbegin', html);
-//         // displayStable.insertAdjacentHTML('afterbegin', html);
-//         // displayUnderstable.insertAdjacentHTML('afterbegin', html);
-//         displayVeryUnderstable.insertAdjacentHTML('afterbegin', html);
-//     });
-// };
-//
-// const displayVeryUnderstable = () => {
-//     getVeryUnderstableDiscs(arrayOfDiscs);
-// };
-//

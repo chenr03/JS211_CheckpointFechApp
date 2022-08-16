@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-.project-container{
 
-}
 
 #page-container {
     width: 100%;
-    height: 300px;
-    margin: 0 auto;
-    flex-basis: 50%;
+    height: 100%;
+    scroll-margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
 
 
 }
@@ -22,50 +22,152 @@ button {
     align-items: center;
     justify-content: center;
     margin: 10px;
-    color: black;
-    background: lightskyblue;
-    font-size: 100%;
+    font-size: 5%;
     cursor: pointer;
-    border-color: lightcyan;
+    border-color: lightgrey;
+    mso-border-shadow: yes;
+    box-shadow: #cccccc;
     border-radius: 10px;
 }
 
+#button-1e{
+    color: white;
+    background-color: Red;
+}
+
+#button-1n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-1b{
+    background-color: lawngreen;
+}
+
+#button-2e{
+    color: white;
+    background-color: Red;
+}
+
+#button-2n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-2b{
+    background-color: lawngreen;
+}
+
+#button-1n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-1b{
+    background-color: lawngreen;
+}
+
+#button-2e{
+    color: white;
+    background-color: Red;
+}
+
+#button-2n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-2b{
+    background-color: lawngreen;
+}
+
+#button-3e{
+    color: white;
+    background-color: Red;
+}
+
+#button-3n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-3b{
+    background-color: lawngreen;
+}
+
+#button-4e{
+    color: white;
+    background-color: Red;
+}
+
+#button-4n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-4b{
+    background-color: lawngreen;
+}
+
+#button-5e{
+    color: white;
+    background-color: Red;
+}
+
+#button-5n{
+    color: blue;
+    background-color: yellow;
+}
+
+#button-5b{
+    background-color: lawngreen;
+}
+
 #card-container{
-    flex-basis: 50%;
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
 }
 
 h1{
     color: darkorange;
+    font-size: 18px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
 }
 
 h2{
-    font-size: 50px;
-    color: orangered;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 10px;
+    color: blue;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
-h6{
-    font-size: 50px;
-    color: darkorange;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+h5{
+    font-size: 15px;
+    color: steelblue;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
+img{
+    size: 50px;
+}
 
 .project-container {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGlOdm3NejrF9fwJCrO0pKY_w8cnurow3UVg&usqp=CAU"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 100vh; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: inherit; /* Do not repeat the image */
+    height: 1000px;  /* You must set a specified height */
+    width: auto;
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
     display: flex;
-    padding: 2em;
+    justify-content: center;
+    padding: 25px;
     flex-basis: 100%;
-}
-
-h6{
-  font-size: 25px;
+    align-items: flex-start;
+    flex-shrink: inherit;
 }
 
