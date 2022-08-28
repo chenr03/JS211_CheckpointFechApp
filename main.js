@@ -32,11 +32,12 @@ const discGolf = () =>{
     fetch('https://disc-golf.p.rapidapi.com/all', options)
         .then(response => response.json())
         .then(arrayOfDiscs => {
-            const veryOverstable = arrayOfDiscs.veryOverstable.filter(disc => disc.flightPath.length)
-            const overstable = arrayOfDiscs.overstable.filter(disc => disc.flightPath.length)
-            const stable = arrayOfDiscs.stable.filter(disc => disc.flightPath.length)
-            const understable = arrayOfDiscs.understable.filter(disc => disc.flightPath.length)
-            const veryUnderstable = arrayOfDiscs.veryUnderstable.filter(disc => disc.flightPath.length)
+            // const veryOverstable = arrayOfDiscs.veryOverstable.filter(disc => disc.flightPath.length)
+            // const overstable = arrayOfDiscs.overstable.filter(disc => disc.flightPath.length)
+            // const stable = arrayOfDiscs.stable.filter(disc => disc.flightPath.length)
+            // const understable = arrayOfDiscs.understable.filter(disc => disc.flightPath.length)
+            // const veryUnderstable = arrayOfDiscs.veryUnderstable.filter(disc => disc.flightPath.length)
+            const { veryOverstable, overstable, stable, understable, veryUnderstable} = arrayOfDiscs
 
             // console.log(veryOverstable)
             // - Very Overstable Discs in expert, novice, and beginner categories
