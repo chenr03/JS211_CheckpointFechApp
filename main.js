@@ -1,7 +1,6 @@
 // let arrayOfDiscs;
 // let consoleData;
 
-
 window.onload = function () {
     //  *Call functions on page load.
     discGolf();
@@ -36,45 +35,45 @@ const discGolf = () =>{
             const {veryOverstable, overstable, stable, understable, veryUnderstable} = arrayOfDiscs
             // console.log(veryOverstable)
             // - Very Overstable Discs in expert, novice, and beginner categories
-                const expertDiscVeryOverstable = veryOverstable.filter(disc=> disc.speed >= 11 && disc.glide >= 3 && disc.turn >= 0 && disc.fade >= 4)
-                const noviceDiscVeryOverstable = veryOverstable.filter(disc=> (disc.speed < 11 && disc.speed > 5) && disc.glide > 0 && disc.turn >0 && disc.fade >= 0)
-                const beginnerDiscVeryOverstable = veryOverstable.filter(disc=> disc.speed <= 5 && disc.glide >= 0 && disc.turn >= 0 && disc.fade>0)
+                const expertDiscVeryOverstable = veryOverstable.filter(disc=> disc.speed >= 11 && disc.glide >= 3 && disc.turn >= 0 && disc.fade >= 4).splice(0, 15)
+                const noviceDiscVeryOverstable = veryOverstable.filter(disc=> (disc.speed < 11 && disc.speed > 5) && disc.glide > 0 && disc.turn >0 && disc.fade >= 0).splice(0, 15)
+                const beginnerDiscVeryOverstable = veryOverstable.filter(disc=> disc.speed <= 5 && disc.glide >= 0 && disc.turn >= 0 && disc.fade>0).splice(0, 15)
                 console.log('Very Overstable Discs - Expert: ', expertDiscVeryOverstable)
                 console.log('Very Overstable Discs - Intermediate: ', noviceDiscVeryOverstable)
                 console.log('Very Overstable Discs - Beginner: ', beginnerDiscVeryOverstable)
 
             // console.log(overstable)
             // - Overstable Discs in expert, novice, and beginner categories
-                const expertDiscOverstable = overstable.filter(disc=> disc.speed >= 11 && disc.glide >= 3 && disc.turn >= 0 && disc.fade >= 4)
-                const noviceDiscOverstable = overstable.filter(disc=> (disc.speed < 11 && disc.speed > 5) && disc.glide > 0 && disc.turn >0 && disc.fade >= 0)
-                const beginnerDiscOverstable = overstable.filter(disc=> disc.speed <= 5 && disc.glide >= 0 && disc.turn >= 0 && disc.fade>0)
+                const expertDiscOverstable = overstable.filter(disc=> disc.speed >= 11 && disc.glide >= 3 && disc.turn >= 0 && disc.fade >= 4).splice(0, 15)
+                const noviceDiscOverstable = overstable.filter(disc=> (disc.speed < 11 && disc.speed > 5) && disc.glide > 0 && disc.turn >0 && disc.fade >= 0).splice(0, 15)
+                const beginnerDiscOverstable = overstable.filter(disc=> disc.speed <= 5 && disc.glide >= 0 && disc.turn >= 0 && disc.fade>0).splice(0, 15)
                 console.log('Overstable Discs - Expert: ', expertDiscOverstable)
                 console.log('Overstable Discs - Intermediate: ', noviceDiscOverstable)
                 console.log('Overstable Discs - Beginner: ', beginnerDiscOverstable)
 
             // console.log(stable)
             // - Stable Discs in expert, novice, and beginner categories
-                const expertDiscStable = stable.filter(disc=> disc.speed >= 10 && disc.glide >= 5 && disc.turn >= -3 && disc.fade >= 3)
-                const noviceDiscStable = stable.filter(disc=> (disc.speed < 10 && disc.speed >= 6) && disc.glide > 4 && disc.turn > -.5 && disc.fade >= 0)
-                const beginnerDiscStable = stable.filter(disc=> disc.speed <= 5 && disc.glide >= -1 && disc.turn >= 0 && disc.fade >= 0)
+                const expertDiscStable = stable.filter(disc=> disc.speed >= 10 && disc.glide >= 5 && disc.turn >= -3 && disc.fade >= 3).splice(0, 15)
+                const noviceDiscStable = stable.filter(disc=> (disc.speed < 10 && disc.speed >= 6) && disc.glide > 4 && disc.turn > -.5 && disc.fade >= 0).splice(0, 15)
+                const beginnerDiscStable = stable.filter(disc=> disc.speed <= 5 && disc.glide >= -1 && disc.turn >= 0 && disc.fade >= 0).splice(0, 15)
                 console.log('Stable Discs - Expert: ', expertDiscStable)
                 console.log('Stable Discs - Intermediate: ', noviceDiscStable)
                 console.log('Stable Discs - Beginner: ', beginnerDiscStable)
 
             // console.log(understable)
             // - Understable Discs in expert, novice, and beginner categories
-                const expertDiscUnderstable = understable.filter(disc=> disc.speed >= 10 && disc.glide >= 5 && disc.turn >= -3 && disc.fade >= 3)
-                const noviceDiscUnderstable = understable.filter(disc=> (disc.speed < 10 && disc.speed >= 8) && disc.glide > 3 && disc.turn > -5 && disc.fade >= 0)
-                const beginnerDiscUnderstable = understable.filter(disc=> disc.speed <= 5 && disc.glide >= -3 && disc.turn >= 0 && disc.fade >= 0)
+                const expertDiscUnderstable = understable.filter(disc=> disc.speed >= 10 && disc.glide >= 5 && disc.turn >= -3 && disc.fade >= 3).splice(0, 15)
+                const noviceDiscUnderstable = understable.filter(disc=> (disc.speed < 10 && disc.speed >= 8) && disc.glide > 3 && disc.turn > -5 && disc.fade >= 0).splice(0, 15)
+                const beginnerDiscUnderstable = understable.filter(disc=> disc.speed <= 5 && disc.glide >= -3 && disc.turn >= 0 && disc.fade >= 0).splice(0, 15)
                 console.log('Understable Discs - Expert: ', expertDiscUnderstable)
                 console.log('Understable Discs - Intermediate: ', noviceDiscUnderstable)
                 console.log('Understable Discs - Beginner: ', beginnerDiscUnderstable)
 
             // console.log(veryUnderstable)
             // - Very Understable Discs in expert, novice, and beginner categories
-                const expertDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed >= 10 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0)
-                const noviceDiscVeryUnderstable = veryUnderstable.filter(disc=> (disc.speed < 10 && disc.speed >= 7) && disc.glide > 3 && disc.turn >= -4 && disc.fade >= 0)
-                const beginnerDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed <= 5 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0)
+                const expertDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed >= 10 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0).splice(0, 15)
+                const noviceDiscVeryUnderstable = veryUnderstable.filter(disc=> (disc.speed < 10 && disc.speed >= 7) && disc.glide > 3 && disc.turn >= -4 && disc.fade >= 0).splice(0, 15)
+                const beginnerDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed <= 5 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0).splice(0, 15)
                 console.log('Very Understable Discs - Expert: ', expertDiscVeryUnderstable)
                 console.log('Very Understable Discs - Intermediate: ', noviceDiscVeryUnderstable)
                 console.log('Very Understable Discs - Beginner: ', beginnerDiscVeryUnderstable)
@@ -159,18 +158,12 @@ const getDisc = (arrayOfDiscs) => {
     arrayOfDiscs.map(disc => {
 
         const html = `
-     <div id="card-container">
-
-        <h1>${disc.name}</h1>     
-            <h6>
-                <picture>
-                     <img src="${disc.flightPath}" alt="user image" class="user-image" />
-                </picture>
-            </h6>
-        </div>
-        
-      </div>
-    </div>
+     <div id="card-container"> 
+        <h6>
+            <picture>
+                <img src="${disc.flightPath}" alt="user image" class="user-image" />
+            </picture>
+        </h6>  
     </div>
     `;
         displayResults.insertAdjacentHTML('beforeend', html);

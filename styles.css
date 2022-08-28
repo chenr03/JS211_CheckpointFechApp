@@ -7,22 +7,18 @@
 
 
 #page-container {
-    width: 100%;
-    height: 100%;
-    scroll-margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 15%;
-
-
+    height: auto;
+    width: auto;
+    flex-basis: 05%;
 }
 
 button {
+    height:auto;
+    width: auto;
+    float-wrap: wrap;
     padding: 5px 10px;
-    align-items: center;
-    justify-content: center;
     margin: 10px;
-    font-size: 5%;
+    font-size: 20px;
     cursor: pointer;
     border-color: lightgrey;
     mso-border-shadow: yes;
@@ -124,25 +120,40 @@ button {
 }
 
 #card-container{
-    width: 100%;
+    width: 15px;
     height: 5%;
-    background-size: 15px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin: 10px;
+    padding: 1px;
+    flex-basis: 95%;
 
 }
 
+
+
 h1{
-    color: darkorange;
-    font-size: 18px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: black;
+    font-size: 30px;
+    margin-left: 30px;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 
 }
 
 h2{
-    font-size: 10px;
-    background-size: 50px;
-    color: blue;
+    font-size: 30px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+h3{
+    font-size: 30px;
+    color: black;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
@@ -153,19 +164,11 @@ h5{
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 
-h6{
-    background-size: 15px;
-
-}
-img{
-    size: 50px;
-}
-
 .project-container {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGlOdm3NejrF9fwJCrO0pKY_w8cnurow3UVg&usqp=CAU"); /* The image used */
+    background-image: url("https://i.etsystatic.com/25331299/r/il/3629ec/2553299124/il_570xN.2553299124_nhrn.jpg"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 1000px;  /* You must set a specified height */
-    width: auto;
+    height: 1500px;  /* You must set a specified height */
+    width: 100%;
     background-position: center center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -175,7 +178,12 @@ img{
     padding: 25px;
     flex-basis: 100%;
     align-items: flex-start;
-    flex-shrink: inherit;
+
+}
+
+h6 {
+    padding: 1px;
+    margin: 1px;
 }
 
 
