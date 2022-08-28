@@ -64,7 +64,7 @@ const discGolf = () =>{
             // console.log(understable)
             // - Understable Discs in expert, novice, and beginner categories
                 const expertDiscUnderstable = understable.filter(disc=> disc.speed >= 10 && disc.glide >= 5 && disc.turn >= -3 && disc.fade >= 3)
-                const noviceDiscUnderstable = understable.filter(disc=> (disc.speed < 10 && disc.speed >= 6) && disc.glide > 3 && disc.turn > -5 && disc.fade >= 0)
+                const noviceDiscUnderstable = understable.filter(disc=> (disc.speed < 10 && disc.speed >= 8) && disc.glide > 3 && disc.turn > -5 && disc.fade >= 0)
                 const beginnerDiscUnderstable = understable.filter(disc=> disc.speed <= 5 && disc.glide >= -3 && disc.turn >= 0 && disc.fade >= 0)
                 console.log('Understable Discs - Expert: ', expertDiscUnderstable)
                 console.log('Understable Discs - Intermediate: ', noviceDiscUnderstable)
@@ -73,7 +73,7 @@ const discGolf = () =>{
             // console.log(veryUnderstable)
             // - Very Understable Discs in expert, novice, and beginner categories
                 const expertDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed >= 10 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0)
-                const noviceDiscVeryUnderstable = veryUnderstable.filter(disc=> (disc.speed < 10 && disc.speed >= 6) && disc.glide > 3 && disc.turn >= -4 && disc.fade >= 0)
+                const noviceDiscVeryUnderstable = veryUnderstable.filter(disc=> (disc.speed < 10 && disc.speed >= 7) && disc.glide > 3 && disc.turn >= -4 && disc.fade >= 0)
                 const beginnerDiscVeryUnderstable = veryUnderstable.filter(disc=> disc.speed <= 5 && disc.glide >= 3 && disc.turn >= -4 && disc.fade >= 0)
                 console.log('Very Understable Discs - Expert: ', expertDiscVeryUnderstable)
                 console.log('Very Understable Discs - Intermediate: ', noviceDiscVeryUnderstable)
@@ -162,8 +162,6 @@ const getDisc = (arrayOfDiscs) => {
      <div id="card-container">
 
         <h1>${disc.name}</h1>     
-        <h5>${disc.flightType}</h5>
-        <div id="flightPath-container">
             <h6>
                 <picture>
                      <img src="${disc.flightPath}" alt="user image" class="user-image" />
