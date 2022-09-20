@@ -166,12 +166,8 @@ const getDisc = (arrayOfDiscs) => {
 
         const html = `
      <div id="card-container"> 
-        <h6>
-            <picture>
-                <img src="${disc.flightPath}" alt="user image" class="user-image" />
-            </picture>
-        </h6>  
-    </div>
+       <img src="${disc.flightPath}" alt="user image" class="user-image" />
+     </div>
     `;
         displayResults.insertAdjacentHTML('beforeend', html);
         // displayOverstable.insertAdjacentHTML('afterbegin', html);
